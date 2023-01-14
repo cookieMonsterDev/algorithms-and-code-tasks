@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  margin: auto;
+  width: 100vw;
+}
+
+section h1 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.list {
+  margin: auto;
+  margin-top: 20px;
+  width: 500px;
+}
+
+.list:nth-child(1) {
+  margin-top: 0;
+}
