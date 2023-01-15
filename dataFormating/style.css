@@ -4,22 +4,34 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(204, 199, 199);
+}
+
+main {
+  padding: 5px;
+  display: grid;
+  grid-template-columns:  repeat(auto-fill, 450px);
+  justify-content: center;
+  gap: 5px;
+}
+
 section {
-  margin: auto;
-  width: 100vw;
+  min-height: 300px;
+  background-color: aliceblue;
 }
 
 section h1 {
   margin: 10px 0;
   text-align: center;
+  font-family: 'Secular One', sans-serif;
 }
 
 .list {
   margin: auto;
-  margin-top: 20px;
-  width: 500px;
+  font-family: 'Poppins', sans-serif;
 }
 
-.list:nth-child(1) {
-  margin-top: 0;
+.list ol {
+  padding-left: 30px;
 }
