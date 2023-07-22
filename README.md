@@ -1,1 +1,1 @@
-# codeWars-TypeScript
+# codeWars-tasks
