@@ -1,6 +1,3 @@
-// function isArray (val) { return Array.isArray(val)}
-// function isObject (val) { return Object.isObject(val)}
-
 var compactObject = function (obj) {
   const isArray = Array.isArray(obj);
   const res = isArray ? [] : {};
