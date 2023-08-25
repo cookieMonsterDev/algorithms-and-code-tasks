@@ -1,5 +1,5 @@
-// import info from './info.json' assert { type: "json" };
+import { StringManager } from './ts-decorators/index.js'
 
-// console.log(info['name'])
+const stringManager = new StringManager();
 
-// console.log('test')
+stringManager.print('hello')

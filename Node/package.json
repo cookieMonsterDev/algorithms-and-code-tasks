@@ -5,19 +5,20 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node ./build/index.js",
-    "build": "tsc -p tsconfig.json",
-    "dev": "tsc -p tsconfig.json && tsc-watch --onSuccess \"nodemon ./build/index.js\""
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc-watch --onSuccess \"nodemon ./dist/index.js\""
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "node": "^20.5.0"
-  },
   "devDependencies": {
-    "@types/node": "^20.4.10",
+    "@types/node": "^20.5.6",
     "nodemon": "^3.0.1",
     "tsc-watch": "^6.0.4",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "node": "^20.5.1"
   }
 }
