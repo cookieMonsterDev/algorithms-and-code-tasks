@@ -14,7 +14,7 @@
 // needed in hours, minutes and seconds (round down to the nearest second) 
 // or a string in some languages.
 
-function tortoiseRaice (v1: number, v2: number, g: number): number[] {
+function tortoiseRaice (v1: number, v2: number, g: number): number[] | null {
       
   if (v1 >= v2) return null;
       
