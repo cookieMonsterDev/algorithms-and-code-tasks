@@ -11,3 +11,10 @@ var flutten = function (arr) {
     return res;
 };
 console.log(flutten(nestedArray));
+
+
+/// or just if there is no rule how to do it))
+
+const unflatArray = (arr) => {
+    return arr.flat(Infinity);
+}
