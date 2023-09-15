@@ -109,16 +109,39 @@ class LinkedList {
     prev.next = node
     this.length++
   }
+
+  removeIndex(index) {
+    let length = 0;
+    let cur = this.head;
+    let prev = null;
+
+    while(cur.next) {
+      length++
+      cur = cur.next
+    }
+
+    cur = this.head
+
+    for(let i = 0; i <= length - index; i++) {
+      prev = cur;
+      cur = cur.next;
+    }
+
+    prev.next = cur.next
+
+    return [prev.value, cur.value]
+  }
 }
 
 const list = new LinkedList();
 
-list.unshift("d");
-list.unshift("c");
-list.unshift("a");
+list.push(1);
+list.push(2);
+list.push(3);
+list.push(4);
+list.push(5);
 
 // console.log(list.printList());
-
-list.insert("b", 1);
+console.log(list.removeIndex(2))
 
 console.log(list.printList());
