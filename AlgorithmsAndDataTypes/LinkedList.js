@@ -131,6 +131,21 @@ class LinkedList {
 
     return [prev.value, cur.value]
   }
+
+  reverce() {
+    let currentNode = this.head;
+    let prevNode = null;
+    let nextNode = null;
+
+   while (currentNode) {
+        nextNode = currentNode.next;
+        currentNode.next = prevNode;
+        prevNode = currentNode;
+        currentNode = nextNode;
+        nextNode = null;
+    }
+    this.head = prevNode;
+  }
 }
 
 const list = new LinkedList();
@@ -141,7 +156,6 @@ list.push(3);
 list.push(4);
 list.push(5);
 
-// console.log(list.printList());
-console.log(list.removeIndex(2))
+list.reverce()
 
 console.log(list.printList());
