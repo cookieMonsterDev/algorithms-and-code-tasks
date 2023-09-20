@@ -12,4 +12,4 @@ function arrayDiff(a, b) {
   return res
 }
 
-console.log(arrayDiff([1,2,3], [1, 2]))
+console.log(arrayDiff([1,2,3], [1,2]))
