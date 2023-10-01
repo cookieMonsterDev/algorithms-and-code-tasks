@@ -1,12 +1,13 @@
-const arr = [1,1,2,3]
+const arr = [1,2,2,3]
 
-var removeElement = function(nums, val) {
-  const a = nums.filter((e) => e !== val)
-  arr.length = 0;
-  arr.push(...a);
-  return a.length
+var isMonotonic = function(nums) {
+  for(let i = 1; i <= nums.length; i++) {
+      if(nums[i - 1] > nums[i]) {
+        return false;
+      }
+  }
+
+  return true;
 };
 
-removeElement(arr, 3)
-
-console.log(arr)
+console.log(isMonotonic(arr))
