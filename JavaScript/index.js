@@ -1,13 +1,8 @@
 const arr = [1,2,2,3]
 
-var isMonotonic = function(nums) {
-  for(let i = 1; i <= nums.length; i++) {
-      if(nums[i - 1] > nums[i]) {
-        return false;
-      }
-  }
-
-  return true;
+var isMonotonic = function(s) {
+  const news = s.toLowerCase().replace(/[^A-Za-z]/g,'').split('').reverse().join();
+  return news
 };
 
-console.log(isMonotonic(arr))
+console.log(isMonotonic('ab_a'))
