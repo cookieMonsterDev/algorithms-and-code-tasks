@@ -1,7 +1,5 @@
-var myPow = function(x, n) {
-
-
-  return x ** n 
+var countHomogenous = function (s) {
+  return s
 };
 
-console.log(myPow(2, 0))
+console.log(countHomogenous("abbcccaa"));
