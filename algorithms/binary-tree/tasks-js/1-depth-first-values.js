@@ -7,28 +7,30 @@ Hey. This is our first binary tree problem, so be extra sure to check out the ap
  */
 
 const depthFirstValues = (root) => {
-  if(!root) return [];
-  
+  if (!root) return [];
+
   const values = [];
-  
+
   const stuck = [root];
-  
-  while(stuck.length > 0) {
+
+  while (stuck.length > 0) {
     const node = stuck.pop();
-    
+
     values.push(node.val);
-    
-    if(node.right) stuck.push(node.right);
-    if(node.left) stuck.push(node.left);
+
+    if (node.right) stuck.push(node.right);
+    if (node.left) stuck.push(node.left);
   }
-  
+
   return values;
 };
 
 //With recursion:
 
 const depthFirstValuesRec = (root) => {
+  if (!root) return [];
+
   const leftValues = depthFirstValues(root.left);
-   const rightValues = depthFirstValues(root.right);
-   return [ root.val, ...leftValues, ...rightValues ];
- }
+  const rightValues = depthFirstValues(root.right);
+  return [root.val, ...leftValues, ...rightValues];
+};
